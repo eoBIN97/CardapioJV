@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./styles/output.css">
+    <title>JV Pensão</title>
+</head>
+<body>
+
+   <!------HEADER---->
+   <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <div class="w-full h-full flex flex-col justify-center items-center">
+        <img 
+        src="./assets/hamb-1.png" 
+        alt="Foto do Hamburger"
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+                <!---TEXTO--->
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Hamburgueria JV</h1>
+                <!---FIM TEXTO--->
+
+                <!---ENDEREÇO--->
+        <span class="text-white font-medium">Adélia Chaves 20, Nova Iguaçu - RJ</span>
+                <!---FIM ENDEREÇO--->
+                
+                <!---ABERTURA--->
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+            <span class="text-white font-medium">Seg á Sab - 08:00 ás 14:00</span>
+        </div>
+                <!---FIM ABERTURA--->
+    </div>
+   </header>
+   <!------FIM HEADER---->
+
+   <!---CARDÁPIO--->
+
+   <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso cardápio</h2>
+
+<!-----INICIO MENU-->
+
+<div id="menu">
+
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <!-----INICIO PRODUTOS-->
+        <!-----PRIMEIRO PRODUTOS-->
+        <div class="flex gap-2">
+            <img
+            src="./assets/hamb-1.png"
+            alt="Hamburger Smash"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+
+        <div>
+            <p class="font-bold ">Hamburger Smash</p>
+            <p class="text-sm">120 g de carne de sua escolha, 4 Fatias de quejo cheddar, suiço ou americano, 2 pães de Hamburger, 15ml de mostarda
+                10 gr de cebola picada.</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg ">R$ 24,99</p>
+            <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Hamburger Smash"
+            data-price="24.99"
+            >
+                <i class="fa-sharp fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>   
+        </div>
+        </div>
+         <!-----FIM PRIMEIRO PRODUTOS-->
+
+         <!-----SEGUNDO PRODUTOS-->
+        <div class="flex gap-2">
+            <img
+            src="./assets/hamb-2.png"
+            alt="Hamburger "
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+
+        <div>
+            <p class="font-bold ">Hamburger The Best Burger</p>
+            <p class="text-sm">210g de blend Black Angus, queijo prato, 
+                bacon crocante, onion rings, molho especial à base de pimenta no pão de brioche..</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg ">R$ 37,90</p>
+            <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Hamburger The Best Burger"
+            data-price="37.90"
+            >
+                <i class="fa-sharp fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>   
+        </div>
+        </div>
+         <!-----FIM SEGUNDO PRODUTOS-->
+
+        <!-----TERCEIRO PRODUTOS-->
+        <div class="flex gap-2">
+            <img
+            src="./assets/hamb-3.png"
+            alt="Hamburger "
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+
+        <div>
+            <p class="font-bold ">Hamburger Raze Burger Duplo</p>
+            <p class="text-sm">2 burgers de 150g de blend Black Angus, queijo prato, 
+                alface, tomate, cebola, bacon crocante e molho da casa à base de alho no pão de brioche.</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg ">R$ 47,90</p>
+            <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Hamburger Raze Burger Duplo"
+            data-price="47.90"
+            >
+                <i class="fa-sharp fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>   
+        </div>
+        </div>
+         <!-----FIM TERCEIRO PRODUTOS-->
+
+         <!-----QUARTO PRODUTOS-->
+        <div class="flex gap-2">
+            <img
+            src="./assets/hamb-4.png"
+            alt="Hamburger "
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+
+        <div>
+            <p class="font-bold ">Hamburger Future Burger</p>
+            <p class="text-sm">Hambúrguer feito à base de plantas da Fazenda Futuro, 
+                queijo prato, alface, tomate, cebola, molho da casa à base de alho no pão de brioche.</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg ">R$ 39,90</p>
+            <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Hamburger Future Burger"
+            data-price="39.90"
+            >
+                <i class="fa-sharp fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>   
+        </div>
+        </div>
+         <!-----FIM QUARTO PRODUTOS-->
+
+         <!-----QUINTO PRODUTOS-->
+        <div class="flex gap-2">
+            <img
+            src="./assets/hamb-5.png"
+            alt="Hamburger "
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+
+        <div>
+            <p class="font-bold ">Hamburger Especial</p>
+            <p class="text-sm">Pão de hamburguer macio, carne suculenta, 
+                queijo derretendo, salada, finalizado com molho especial da casa.</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg ">R$ 15,99</p>
+            <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Hamburger Especial"
+            data-price="15.99"
+            >
+                <i class="fa-sharp fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>   
+        </div>
+        </div>
+         <!-----FIM QUINTO PRODUTOS-->
+
+         <!-----SEXTO PRODUTOS-->
+        <div class="flex gap-2">
+            <img
+            src="./assets/hamb-6.png"
+            alt="Hamburger "
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+
+        <div>
+            <p class="font-bold ">Hamburger X-Montanha</p>
+            <p class="text-sm">O X-Montanha é uma obra-prima dos hambúrgueres. 
+                Combinando ingredientes frescos e selecionados, traz um sabor incomparável para 
+                satisfazer os paladares mais exigentes..</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg ">R$ 22,00</p>
+            <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="Hamburger X-Montanha"
+            data-price="22,00"
+            >
+                <i class="fa-sharp fa-solid fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>   
+        </div>
+        </div>
+         <!-----FIM SEXTO PRODUTOS-->
+    </main>
+
+    <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">Bebidas</h2>
+    </div>
+    
+<!-------BEBIDAS----->>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+       <!-----PRIMEIRO PRODUTOS-->
+       <div class="flex gap-2 w-full">
+        <img
+        src="./assets/refri-1.png"
+        alt="Cocacola"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+    <div class="w-full">
+        <p class="font-bold ">Coca Cola Lata</p>
+        <p class="text-sm"></p>
+
+    <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg ">R$ 5,00</p>
+        <button 
+        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+        data-name="Coca Cola Lata"
+        data-price="5"
+        >
+            <i class="fa-sharp fa-solid fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>   
+    </div>
+    </div>
+     <!-----FIM PRIMEIRO PRODUTOS-->
+
+     <!-----SEGUNDO PRODUTOS-->
+     <div class="flex gap-2 w-full">
+        <img
+        src="./assets/refri-2.png"
+        alt="Guaraná Antarctica Lata"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+
+    <div class="w-full">
+        <p class="font-bold ">Guaraná Antarctica Lata</p>
+        <p class="text-sm"></p>
+
+    <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg ">R$ 5,00</p>
+        <button 
+        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+        data-name="Guaraná Antarctica Lata"
+        data-price="5"
+        >
+            <i class="fa-sharp fa-solid fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>   
+    </div>
+    </div>
+     <!-----FIM SEGUNDO PRODUTOS-->
+    </div>
+<!-------FIM BEBIDAS----->>
+</div>
+   <!-----FIM MENU-->
+
+<!-----MODAL CART-->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+        id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">0,00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega:</p>
+            <input
+                type="text"
+                placeholder="Digite seu endereço completo..."
+                id="address"
+                class="w-full border-2 p-1 rounded my-1"/>
+
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>   
+            
+            <div class="flex items-center justify-between mt-4 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar pedido</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<!-----FIM MODAL CART-->
+
+   <!----CARRINHO----->
+   <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold"
+                id="cart-Btn">
+            (<span id="cart-count">0</span>)
+            Veja meu CARRINHO
+            <i class="fa-sharp fa-solid fa-cart-plus text-lg text-white"></i>
+        </button>
+   </footer>
+   <!----FIM CARRINHO----->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+   <script src="script.js"></script>
+</body>
+</html>
